@@ -4,6 +4,7 @@ Business incubator BSUIR, 601-4, on Fridays at 3:20 p.m.
 
 Join us in Telegram https://t.me/joinchat/EH0bgxMJZKmNkRuSU2C2-A
 
+
 ## Topics
 - Working with GitHub
 - Team collobaration, Agile and Scrum basics
