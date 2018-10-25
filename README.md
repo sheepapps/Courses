@@ -13,5 +13,10 @@ Join us in Telegram https://t.me/joinchat/EH0bgxMJZKmNkRuSU2C2-A
 - MVVM, common edition
 - MVVM, Google Android Architecture
 - Databinding, Observers and LiveData
+- Fragments transactions with MVVM
+- How to insert map into Android project
+- ListView and RecyclerView
+- IoC/DI with Dagger2
+- Retrofit2
 
 Good luck =)
