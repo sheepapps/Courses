@@ -1,31 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:showDividers="middle"
+    android:divider="?android:attr/listDivider"
     tools:context=".MainActivity"
     android:id="@+id/root">
 
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:gravity="center"-->
+        <!--android:textSize="50dp"-->
+        <!--android:text="blurred text"/>-->
 
-    <TextView
+    <cusom_view.aboutpage.CustomView
+        android:id="@+id/view"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="LOL"
-        android:textSize="40sp"
-        android:gravity="right"/>
+        android:layout_height="match_parent"/>
 
-    <cusom_view.aboutpage.BlurView
-        android:id="@+id/blurView"
-        android:layout_width="match_parent"
-        android:layout_height="250dp">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="KEK"
-            android:textSize="40sp"/>
-
-    </cusom_view.aboutpage.BlurView>
 
 </RelativeLayout>

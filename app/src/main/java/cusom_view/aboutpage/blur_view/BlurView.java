@@ -1,4 +1,4 @@
-package cusom_view.aboutpage;
+package cusom_view.aboutpage.blur_view;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -11,8 +11,11 @@ import android.util.AttributeSet;
 import android.util.Log;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
+import android.widget.LinearLayout;
 
-public class BlurView extends FrameLayout {
+import cusom_view.aboutpage.R;
+
+public class BlurView extends LinearLayout {
     private static final String TAG = BlurView.class.getSimpleName();
     @ColorInt
     private static final int TRANSPARENT = 0x00000000;

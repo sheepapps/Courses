@@ -1,0 +1,27 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/customView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:background="@color/colorWhite"
+    android:gravity="center">
+
+    <!--тут надо прописать каждому свои вьюшки-->
+    <!--например так-->
+    <TextView
+        android:id="@+id/mainWord"
+        android:textSize="44sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lorem ipsum"
+        android:textColor="@color/colorBlack" />
+
+
+    <TextView
+        android:id="@+id/secondWord"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="sunt in culpa qui officia deserunt mollit anim id est laborum" />
+
+</merge>

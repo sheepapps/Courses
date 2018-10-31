@@ -1,4 +1,4 @@
-package cusom_view.aboutpage;
+package cusom_view.aboutpage.blur_view;
 
 import android.graphics.Bitmap;
 import android.graphics.Canvas;

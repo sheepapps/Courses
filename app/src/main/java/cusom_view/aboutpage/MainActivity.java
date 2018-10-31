@@ -5,7 +5,8 @@ import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.ViewGroup;
-import android.support.v8.renderscript.*;
+
+import cusom_view.aboutpage.blur_view.SupportRenderScriptBlur;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -15,13 +16,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        BlurView blurView = (BlurView) findViewById(R.id.blurView);
+        // Хз как это из активити убрать
+//        CustomView customView = findViewById(R.id.view);
+//        customView.setupWith((ViewGroup) findViewById(R.id.root))
+//                .setFrameClearDrawable(getWindow().getDecorView().getBackground())
+//                .setBlurAlgorithm(new SupportRenderScriptBlur(this))
+//                .setBlurRadius(8f)
+//                .setHasFixedTransformationMatrix(true);
 
-        blurView.setupWith((ViewGroup) findViewById(R.id.root))
-                .setFrameClearDrawable(getWindow().getDecorView().getBackground())
-                .setBlurAlgorithm(new SupportRenderScriptBlur(this))
-                .setBlurRadius(4f)
-                .setHasFixedTransformationMatrix(true);
     }
-
 }
