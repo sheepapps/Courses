@@ -32,10 +32,7 @@ public class CustomView extends BlurView {
         View view = View.inflate(context, R.layout.custom_view, this);
 
         // тута все махинации с вьюшками если надо
-        mainWord = view.findViewById(R.id.mainWord);
-        secondWord = view.findViewById(R.id.secondWord);
-
-        mainWord.setText("Main");
-        secondWord.setText("Second");
+        //secondWord = view.findViewById(R.id.secondWord);
+        //secondWord.setText("Second");
     }
 }
