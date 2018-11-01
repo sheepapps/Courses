@@ -18,5 +18,12 @@ Join us in Telegram https://t.me/joinchat/EH0bgxMJZKmNkRuSU2C2-A
 - ListView and RecyclerView
 - IoC/DI with Dagger2
 - Retrofit2
+- SOLID principles
+- Implicit intents
+- Custom view developing
+- Android studio tricks
+- Android OS architecture
+
+
 
 Good luck =)
