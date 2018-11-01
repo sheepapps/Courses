@@ -8,20 +8,69 @@
 
     <!--тут надо прописать каждому свои вьюшки-->
     <!--например так-->
-    <TextView
-        android:id="@+id/mainWord"
-        android:textSize="44sp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Lorem ipsum"
-        android:textColor="@color/colorBlack" />
-
 
     <TextView
-        android:id="@+id/secondWord"
+        android:id="@+id/aboutMessage"
         android:textSize="20sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:padding="10px"
         android:text="sunt in culpa qui officia deserunt mollit anim id est laborum" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="#ff00ff"
+            android:text="Button" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="#8b698b"
+            android:text="Button" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="#1b972c"
+            android:text="Button" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Button" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Button" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Button" />
+    </LinearLayout>
 
 </merge>
