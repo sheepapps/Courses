@@ -9,6 +9,13 @@
     <!--тут надо прописать каждому свои вьюшки-->
     <!--например так-->
 
+    <com.pkmmte.view.CircularImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:src="@drawable/image"
+        android:layout_gravity="center"
+        />
+
     <TextView
         android:id="@+id/aboutMessage"
         android:textSize="20sp"
