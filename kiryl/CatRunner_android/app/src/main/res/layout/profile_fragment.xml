@@ -1,161 +1,171 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingLeft="24dp"
-    android:paddingStart="24dp"
-    android:background="@color/colorWhite"
-    android:orientation="vertical">
+    android:layout_height="match_parent">
 
-    <LinearLayout
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:orientation="horizontal">
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:padding="24dp">
 
         <ImageView
+            android:id="@+id/img_profile"
             android:layout_width="120dp"
             android:layout_height="120dp"
-            android:src="@drawable/cat_profile"
-            android:scaleType="centerCrop"/>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginTop="20dp"
-                android:orientation="horizontal" >
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="20sp"
-                    android:textColor="@color/colorBlack"
-                    android:text="@string/txt_name"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="40dp"
-                    android:layout_marginStart="40dp"
-                    android:textColor="@color/colorBlack"
-                    android:textSize="20sp"
-                    android:text="Kitty" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginTop="20dp"
-                android:orientation="horizontal" >
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="20sp"
-                    android:textColor="@color/colorBlack"
-                    android:text="@string/txt_birth"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="40dp"
-                    android:layout_marginStart="40dp"
-                    android:textSize="16sp"
-                    android:text="01.11.2018" />
-
-            </LinearLayout>
-
-        </LinearLayout>
-
-    </LinearLayout>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:textSize="20sp"
-        android:textColor="@color/colorBlack"
-        android:text="@string/txt_gender"/>
-
-    <RadioGroup
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:orientation="horizontal">
-
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="20dp"
-            android:layout_marginRight="20dp"
-            android:textSize="16sp"
-            android:text="@string/txt_male"/>
-
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="16sp"
-            android:text="@string/txt_female"/>
-
-    </RadioGroup>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp">
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/cat_profile" />
 
         <TextView
+            android:id="@+id/txt_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:textSize="20sp"
+            android:layout_alignParentTop="true"
+            android:layout_margin="24dp"
+            android:layout_toEndOf="@id/img_profile"
+            android:layout_toRightOf="@id/img_profile"
+            android:text="@string/txt_name"
             android:textColor="@color/colorBlack"
-            android:text="@string/txt_height"/>
+            android:textSize="20sp" />
 
         <TextView
+            android:id="@+id/txt_user_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:textSize="16sp"
-            android:layout_marginLeft="100dp"
-            android:layout_marginStart="100dp"
-            android:text="0.5m"/>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:textSize="20sp"
+            android:layout_alignStart="@id/txt_user_birth"
+            android:layout_alignLeft="@id/txt_user_birth"
+            android:layout_marginTop="24dp"
+            android:layout_toEndOf="@id/txt_name"
+            android:layout_toRightOf="@id/txt_name"
+            android:text="Kitty"
             android:textColor="@color/colorBlack"
-            android:text="@string/txt_weight"/>
+            android:textSize="20sp" />
 
         <TextView
+            android:id="@+id/txt_birth"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_below="@id/txt_name"
+            android:layout_alignStart="@id/txt_name"
+            android:layout_alignLeft="@id/txt_name"
+            android:layout_toEndOf="@id/img_profile"
+            android:layout_toRightOf="@id/img_profile"
+            android:text="@string/txt_birth"
+            android:textColor="@color/colorBlack"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txt_user_birth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/txt_birth"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:text="01.11.2018"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txt_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/img_profile"
+            android:layout_alignStart="@id/img_profile"
+            android:layout_alignLeft="@id/img_profile"
             android:layout_marginTop="20dp"
-            android:textSize="16sp"
-            android:layout_marginLeft="100dp"
-            android:layout_marginStart="100dp"
-            android:text="5kg"/>
+            android:text="@string/txt_gender"
+            android:textColor="@color/colorBlack"
+            android:textSize="20sp" />
 
-    </LinearLayout>
+        <RadioGroup
+            android:id="@+id/radio_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_gender"
+            android:layout_alignStart="@id/txt_gender"
+            android:layout_alignLeft="@id/txt_gender"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
 
-</LinearLayout>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="24dp"
+                android:layout_marginRight="24dp"
+                android:text="@string/txt_male"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="24dp"
+                android:layout_marginRight="24dp"
+                android:text="@string/txt_female"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="24dp"
+                android:layout_marginRight="24dp"
+                android:text="@string/txt_other"
+                android:textSize="16sp" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/txt_height"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/radio_gender"
+            android:layout_alignStart="@id/radio_gender"
+            android:layout_alignLeft="@id/radio_gender"
+            android:layout_marginTop="20dp"
+            android:text="@string/txt_height"
+            android:textColor="@color/colorBlack"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txt_user_height"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/radio_gender"
+            android:layout_alignStart="@id/txt_name"
+            android:layout_alignLeft="@id/txt_name"
+            android:layout_alignBottom="@id/txt_height"
+            android:layout_marginTop="20dp"
+            android:layout_toEndOf="@id/txt_height"
+            android:layout_toRightOf="@id/txt_height"
+            android:text="0.5m"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txt_weight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_height"
+            android:layout_alignStart="@id/txt_height"
+            android:layout_alignLeft="@id/txt_height"
+            android:layout_marginTop="20dp"
+            android:text="@string/txt_weight"
+            android:textColor="@color/colorBlack"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txt_user_weight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_user_height"
+            android:layout_alignStart="@id/txt_name"
+            android:layout_alignLeft="@id/txt_name"
+            android:layout_alignBottom="@id/txt_weight"
+            android:layout_marginTop="20dp"
+            android:layout_toEndOf="@id/txt_weight"
+            android:layout_toRightOf="@id/txt_weight"
+            android:text="5kg"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+</ScrollView>

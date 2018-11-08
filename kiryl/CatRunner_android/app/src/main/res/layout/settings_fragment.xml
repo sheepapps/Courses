@@ -1,119 +1,128 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#bc9aff"
-    android:orientation="vertical">
+    android:layout_height="match_parent">
 
-    <LinearLayout
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:background="@color/colorWhite"
-        android:paddingStart="24dp"
-        android:paddingLeft="24dp">
+        android:layout_height="match_parent"
+        android:background="#bc9aff"
+        android:orientation="vertical">
 
-        <RelativeLayout
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" >
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:orientation="vertical"
+            android:paddingStart="24dp"
+            android:paddingLeft="24dp">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="72dp"
-                android:textColor="@color/colorBlack"
-                android:textSize="20sp"
-                android:gravity="center_vertical"
-                android:text="@string/txt_unit"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
-            <RadioGroup
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentEnd="true"
-                android:layout_centerInParent="true"
-                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="72dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/txt_unit"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="20sp" />
 
-                <RadioButton
+                <RadioGroup
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="24dp"
-                    android:layout_marginRight="24dp"
-                    android:text="@string/txt_km"/>
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:orientation="horizontal">
 
-                <RadioButton
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="24dp"
+                        android:layout_marginRight="24dp"
+                        android:text="@string/txt_km"
+                        android:textSize="16sp" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="24dp"
+                        android:layout_marginRight="24dp"
+                        android:text="@string/txt_mil"
+                        android:textSize="16sp" />
+
+                </RadioGroup>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="72dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/txt_sounds"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="20sp" />
+
+                <RadioGroup
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="24dp"
-                    android:layout_marginRight="24dp"
-                    android:text="@string/txt_mil"/>
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:orientation="horizontal">
 
-            </RadioGroup>
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="24dp"
+                        android:layout_marginRight="24dp"
+                        android:text="@string/txt_on"
+                        android:textSize="16sp" />
 
-        </RelativeLayout>
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="24dp"
+                        android:layout_marginRight="24dp"
+                        android:text="@string/txt_off"
+                        android:textSize="16sp" />
 
-        <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+                </RadioGroup>
+
+            </RelativeLayout>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="72dp"
-                android:textColor="@color/colorBlack"
-                android:textSize="20sp"
                 android:gravity="center_vertical"
-                android:text="@string/txt_sounds"/>
+                android:text="@string/txt_map"
+                android:textColor="@color/colorBlack"
+                android:textSize="20sp" />
 
-            <RadioGroup
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentEnd="true"
-                android:layout_centerInParent="true"
-                android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:gravity="center_vertical"
+                android:text="@string/txt_theme"
+                android:textColor="@color/colorBlack"
+                android:textSize="20sp" />
 
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="24dp"
-                    android:layout_marginRight="24dp"
-                    android:text="@string/txt_on"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:gravity="center_vertical"
+                android:text="@string/txt_language"
+                android:textColor="@color/colorBlack"
+                android:textSize="20sp" />
 
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="24dp"
-                    android:layout_marginRight="24dp"
-                    android:text="@string/txt_off"/>
-
-            </RadioGroup>
-
-        </RelativeLayout>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="72dp"
-            android:textColor="@color/colorBlack"
-            android:textSize="20sp"
-            android:gravity="center_vertical"
-            android:text="@string/txt_map"/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="72dp"
-            android:textColor="@color/colorBlack"
-            android:textSize="20sp"
-            android:gravity="center_vertical"
-            android:text="@string/txt_theme"/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="72dp"
-            android:textColor="@color/colorBlack"
-            android:textSize="20sp"
-            android:gravity="center_vertical"
-            android:text="@string/txt_language"/>
+        </LinearLayout>
 
     </LinearLayout>
 
-</LinearLayout>
+</ScrollView>
