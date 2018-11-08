@@ -23,7 +23,10 @@ Join us in Telegram https://t.me/joinchat/EH0bgxMJZKmNkRuSU2C2-A
 - Custom view developing
 - Android studio tricks
 - Android OS architecture
-
+- MVP
+- Clean Architecture
+- Sheep Apps Architecture
+- Jetpack library
 
 
 Good luck =)
