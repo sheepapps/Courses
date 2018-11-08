@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="tda_toolbar_settings_margin_end">10dp</dimen>
+    <dimen name="tda_toolbar_text_size">20sp</dimen>
+    <dimen name="sa_tab_text_size">20sp</dimen>
+    <dimen name="sa_time_text_size">15sp</dimen>
+    <dimen name="sa_margin_start">10dp</dimen>
+    <dimen name="sa_margin_top">10dp</dimen>
+    <dimen name="sa_margin_end">15dp</dimen>
+
+</resources>

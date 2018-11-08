@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Come on</string>
+    <string name="start_day_text">Начало дня</string>
+    <string name="end_day_text">Конец дня</string>
+    <string name="start_day_time_default">6:00</string>
+    <string name="end_day_time_default">22:00</string>
+    <string name="add_alert">Новая задача</string>
+    <string name="positive_button">Добавить</string>
+    <string name="negative_button">Отмена</string>
+    <string name="name">Название</string>
+    <string name="info">Описание</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="wd_text_def">NaN</string>
+    <string name="wd_text">%1$d%%</string>
+    <string name="start_time_def">8:00</string>
+    <string name="end_time_def">23:00</string>
+</resources>
