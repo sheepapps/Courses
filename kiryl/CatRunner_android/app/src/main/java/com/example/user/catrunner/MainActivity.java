@@ -48,21 +48,12 @@ public class MainActivity extends AppCompatActivity {
         fragmentTransaction.commit();
     }
 
-    @Override
-    protected void onRestart() {
-        super.onRestart();
-        fragmentTransaction = getFragmentManager().beginTransaction();
-        fragmentTransaction.add(R.id.frgmCont, homeFragment);
-        fragmentTransaction.commit();
-    }
-
     public void onClick(View v) {
         fragmentTransaction = getFragmentManager().beginTransaction();
         switch (v.getId()) {
             case R.id.btn_home:
                 fragmentTransaction.replace(R.id.frgmCont, homeFragment);
                 btnHome.setImageDrawable(getResources().getDrawable(R.drawable.ic_home_25dp_selected));
-                Toast.makeText(MainActivity.this, getResources().getText(R.string.kek), Toast.LENGTH_LONG).show();
                 setTitle(getResources().getString(R.string.app_name));
                 break;
             case R.id.btn_history:

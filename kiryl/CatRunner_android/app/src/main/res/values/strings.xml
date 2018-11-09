@@ -22,6 +22,7 @@
     <string name="txt_gender">Gender</string>
     <string name="txt_male">male</string>
     <string name="txt_female">female</string>
+    <string name="txt_other">other</string>
     <string name="txt_height">Height</string>
     <string name="txt_weight">Weight</string>
     <string name="txt_birth">Birth</string>
