@@ -27,6 +27,12 @@ Join us in Telegram https://t.me/joinchat/EH0bgxMJZKmNkRuSU2C2-A
 - Clean Architecture
 - Sheep Apps Architecture
 - Jetpack library
+- CI/CD
+- Lives library
+- Android components relationships
+- Kotlin briefs
+
+
 
 
 Good luck =)
