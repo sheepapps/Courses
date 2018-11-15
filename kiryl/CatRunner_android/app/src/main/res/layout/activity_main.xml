@@ -1,75 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:gravity="bottom"
-    android:background="@color/colorWhite"
-    android:orientation="vertical">
 
-    <FrameLayout
-        android:id="@+id/frgmCont"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1" >
-    </FrameLayout>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.example.user.catrunner.MainViewModel"/>
+    </data>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:padding="8dp">
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:gravity="bottom"
+        android:orientation="vertical">
 
-        <ImageButton
-            android:contentDescription="@string/title_profile"
-            android:src="@drawable/ic_cat_25dp"
-            android:background="@drawable/menu_btn_shape"
-            android:id="@+id/btn_profile"
-            android:layout_height="match_parent"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:onClick="onClick"/>
+        <FrameLayout
+            android:id="@+id/frgmCont"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
 
-        <ImageButton
-            android:contentDescription="@string/title_history"
-            android:src="@drawable/ic_history_24dp"
-            android:background="@drawable/menu_btn_shape"
-            android:id="@+id/btn_history"
-            android:layout_height="match_parent"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:onClick="onClick"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:padding="8dp">
 
-        <ImageButton
-            android:contentDescription="@string/app_name"
-            android:src="@drawable/ic_home_25dp"
-            android:background="@drawable/menu_btn_shape"
-            android:id="@+id/btn_home"
-            android:layout_height="match_parent"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:onClick="onClick"/>
+            <ImageButton
+                android:id="@+id/btn_profile"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/menu_btn_shape"
+                android:contentDescription="@string/title_profile"
+                android:onClick="@{viewModel::setFragmentNumber}"
+                android:src="@drawable/ic_cat_25dp" />
 
-        <ImageButton
-            android:contentDescription="@string/title_settings"
-            android:src="@drawable/ic_settings_25dp"
-            android:background="@drawable/menu_btn_shape"
-            android:id="@+id/btn_settings"
-            android:layout_height="match_parent"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:onClick="onClick"/>
+            <ImageButton
+                android:id="@+id/btn_history"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/menu_btn_shape"
+                android:contentDescription="@string/title_history"
+                android:onClick="@{viewModel::setFragmentNumber}"
+                android:src="@drawable/ic_history_24dp" />
 
-        <ImageButton
-            android:contentDescription="@string/title_info"
-            android:src="@drawable/ic_i_25dp"
-            android:background="@drawable/menu_btn_shape"
-            android:id="@+id/btn_info"
-            android:layout_height="match_parent"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:onClick="onClick"
-            android:layout_margin="2dp" />
+            <ImageButton
+                android:id="@+id/btn_home"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/menu_btn_shape"
+                android:contentDescription="@string/app_name"
+                android:onClick="@{viewModel::setFragmentNumber}"
+                android:src="@drawable/ic_home_25dp" />
+
+            <ImageButton
+                android:id="@+id/btn_settings"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/menu_btn_shape"
+                android:contentDescription="@string/title_settings"
+                android:onClick="@{viewModel::setFragmentNumber}"
+                android:src="@drawable/ic_settings_25dp" />
+
+            <ImageButton
+                android:id="@+id/btn_info"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/menu_btn_shape"
+                android:contentDescription="@string/title_info"
+                android:onClick="@{viewModel::setFragmentNumber}"
+                android:src="@drawable/ic_i_25dp" />
+
+        </LinearLayout>
 
     </LinearLayout>
-
-</LinearLayout>
+</layout>
