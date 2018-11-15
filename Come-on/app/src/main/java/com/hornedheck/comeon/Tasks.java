@@ -4,6 +4,8 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
 
+import com.hornedheck.comeon.Utils.MySQLiteHelper;
+
 import java.util.ArrayList;
 import java.util.HashSet;
 
@@ -13,32 +15,27 @@ public class Tasks {
 	private static final Tasks ourInstance = new Tasks();
 	public final String PREF_TAG = "tasks";
 	private ArrayList< Task > allTasks;
-	private SharedPreferences preferences;
-	
+	private MySQLiteHelper dbHelper;
 	private Tasks(){
 	}
 
 	public static Tasks getInstance(Context context) {
-		if( ourInstance.preferences == null ){
-			ourInstance.preferences = PreferenceManager.getDefaultSharedPreferences( context );
+		if( ourInstance.dbHelper == null ){
 			ourInstance.allTasks = new ArrayList<>();
+			ourInstance.dbHelper = new MySQLiteHelper(context);
 			ourInstance.refreshTasks();
 		}
 		return ourInstance;
 	}
 	
 	public void refreshTasks(){
-		allTasks.clear();
-		HashSet< String > stringTasks = new HashSet<>( preferences.getStringSet( PREF_TAG , new HashSet< String >() ) );
-		for( String stringTask : stringTasks ){
-			String[] piaces = stringTask.split( DELIMETER );
-			allTasks.add( new Task( piaces[0] , piaces[1] , piaces[2] , piaces[3] ) );
-		}
+		allTasks = (ArrayList<Task>) this.dbHelper.getAllTasks();
 	}
 	
 	public void addTask( Task task ){
 		allTasks.add( task );
-		save();
+		dbHelper.putTask( task );
+		//save();
 	}
 	
 	public ArrayList< Task > getAllTasks(){
@@ -46,10 +43,10 @@ public class Tasks {
 	}
 	
 	public void removeTask( int index ){
-		allTasks.remove( index );
-		save();
+		//allTasks.remove( index );
+		//save();
 	}
-	public void save(){
+	/*public void save(){
 		SharedPreferences.Editor prefsEditor;
 		prefsEditor = preferences.edit();
 		HashSet< String > stringSet = new HashSet<>();
@@ -58,6 +55,6 @@ public class Tasks {
 		}
 		prefsEditor.putStringSet( PREF_TAG , stringSet );
 		prefsEditor.apply();
-	}
+	}*/
 	
 }

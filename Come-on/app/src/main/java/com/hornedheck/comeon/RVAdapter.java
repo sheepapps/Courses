@@ -9,6 +9,9 @@ import android.view.ViewGroup;
 import android.widget.CheckBox;
 import android.widget.TextView;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 public class RVAdapter
@@ -37,7 +40,7 @@ public class RVAdapter
 		holder.taskName.setText( tasks.get( position ).getName() );
 		holder.taskDate.setText( tasks.get( position ).getDateForUser() );
 		holder.taskDone.setChecked( tasks.get( position ).isDone() );
-		holder.taskDone.setTag(position);
+		holder.taskDone.setTag(tasks.get(position).getId());
 	}
 	
 	@Override
@@ -48,6 +51,17 @@ public class RVAdapter
 	@Override
 	public void onAttachedToRecyclerView( RecyclerView recyclerView ){
 		super.onAttachedToRecyclerView( recyclerView );
+	}
+
+	public ArrayList< Task > getSortedTasks(ArrayList< Task > allTasks) {
+		Collections.sort(allTasks, new Comparator<Task>() {
+			@Override
+			public int compare(Task t1, Task t2) {
+				return t1.getDate().compareTo(t2.getDate());
+			}
+		});
+
+		return allTasks;
 	}
 	
 	public static class TaskViewHolder

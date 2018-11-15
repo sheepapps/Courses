@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 
-    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
 
         <EditText
             android:id="@+id/add_name"
@@ -33,14 +32,14 @@
             android:id="@+id/add_time"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:onClick="getDateTime"
+            android:onClick="timePicker"
             app:srcCompat="@drawable/ic_alarm_white_24dp" />
 
         <ImageButton
             android:id="@+id/add_date"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:onClick="getDateTime"
+            android:onClick="datePicker"
             app:srcCompat="@drawable/ic_date_range_white_24dp" />
     </LinearLayout>
 
