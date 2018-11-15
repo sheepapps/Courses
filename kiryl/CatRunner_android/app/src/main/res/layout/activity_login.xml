@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txt_hello"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="3"
+        android:gravity="center"
+        android:text="@string/txt_hello"
+        android:textColor="@color/colorBlack"
+        android:textSize="48sp" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginHorizontal="30dp"
+            android:textColorHint="@color/colorAccentPink"
+            android:theme="@style/LoginEditText"
+            android:hint="@string/txt_login">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:digits="@string/txt_login_digits"
+                android:drawableLeft="@drawable/ic_person_24dp"
+                android:drawablePadding="8dp"
+                android:inputType="textAutoCorrect"
+                android:maxLength="50"
+                android:lines="1" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:hint="@string/txt_password"
+            android:layout_marginHorizontal="30dp"
+            android:textColorHint="@color/colorAccentPink"
+            android:theme="@style/LoginEditText">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:drawableLeft="@drawable/ic_lock_24dp"
+                android:drawablePadding="8dp"
+                android:maxLength="50"
+                android:inputType="textPassword"
+                android:maxLines="1" />
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="60dp"
+        android:background="@drawable/login_btn_background"
+        android:text="@string/txt_login"
+        android:enabled="false"
+        android:textColor="@color/colorWhite"
+        android:textSize="12sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="60dp"
+        android:background="@color/colorPrimaryDark" />
+
+    <Button
+        android:id="@+id/btn_create_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="60dp"
+        android:textColor="@color/colorWhite"
+        android:textSize="12sp"
+        android:background="@drawable/login_btn_background"
+        android:text="@string/txt_create_account" />
+
+    <TextView
+        android:id="@+id/btn_oops"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="12sp"
+        android:text="@string/txt_oops" />
+
+</LinearLayout>

@@ -1,0 +1,31 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <TableRow>
+
+        <ImageButton
+            android:id="@+id/actionbar_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back_24dp"
+            android:layout_gravity="center_vertical"
+            android:background="@android:color/transparent"/>
+
+
+        <TextView
+            android:id="@+id/actionbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp"
+            android:typeface="monospace"
+            android:padding="10dp"
+            android:textAllCaps="true"
+            android:layout_weight="1" />
+
+    </TableRow>
+
+</TableLayout>
