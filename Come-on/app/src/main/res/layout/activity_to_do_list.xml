@@ -45,7 +45,7 @@
                     android:layout_centerVertical="true"
                     android:layout_marginEnd="@dimen/tda_toolbar_settings_margin_end"
                     android:background="@drawable/ic_settings_24dp"
-                    android:onClick="goToSettings" />
+                    android:onClick="goToSettingsPressed" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -66,7 +66,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
         android:layout_margin="16dp"
-        android:onClick="addTask"
+        android:onClick="addButtonPressed"
         app:srcCompat="@drawable/ic_add_black_24dp"
         tools:ignore="VectorDrawableCompat" />
 </android.support.design.widget.CoordinatorLayout>
